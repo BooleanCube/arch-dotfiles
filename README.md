@@ -28,4 +28,4 @@ These are my dotfiles on Arch Linux. I am currently using Archcraft OS with bspw
 ![image](https://user-images.githubusercontent.com/47650058/189801872-89c45aa0-6d87-45e9-96f3-24d3a6bd0672.png)
 
 ### Neovim - Super lightweight multipurpose IDE
-![image](https://user-images.githubusercontent.com/47650058/189802377-e8497d30-acc7-409d-96da-90a1edddb718.png)
+![image](https://user-images.githubusercontent.com/47650058/189802750-e0a21562-47ff-4a04-84d0-7c51a847b77c.png)
