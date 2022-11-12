@@ -68,7 +68,7 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use "arzg/vim-substrata"
   use "ChristianChiarulli/nvcode-color-schemes.vim"
-  use 'folke/tokyonight.nvim'
+  use "folke/tokyonight.nvim"
   use { "catppuccin/nvim", as = "catppuccin" }
 
   -- cmp plugins
@@ -89,33 +89,42 @@ return packer.startup(function(use)
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "https://git.sr.ht/~whynothugo/lsp_lines.nvim" -- for LSP Virtual Text lines
-  use "danymat/neogen" -- for comment intellisense
-    
+  use "danymat/neogen" -- for comment intellisense    
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
   -- Syntax Highlighting
-  use 'nvim-treesitter/nvim-treesitter'
-  use 'lervag/vimtex'
-  use 'uiiaoo/java-syntax.vim'
-  use 'bfrg/vim-cpp-modern'
-  use 'tpope/vim-git'
-  use 'SirJson/fzf-gitignore'
-  use 'othree/html5.vim'
-  use 'pangloss/vim-javascript'
-  use 'statico/vim-javascript-sql'
-  use 'elzr/vim-json'
-  use 'tbastos/vim-lua'
-  use 'plasticboy/vim-markdown'
-  use 'PProvost/vim-ps1'
-  use 'numirias/semshi'
+  use "nvim-treesitter/nvim-treesitter"
+  use "lervag/vimtex"
+  use "uiiaoo/java-syntax.vim"
+  use "bfrg/vim-cpp-modern"
+  use "tpope/vim-git"
+  use "SirJson/fzf-gitignore"
+  use "othree/html5.vim"
+  use "pangloss/vim-javascript"
+  use "statico/vim-javascript-sql"
+  use "elzr/vim-json"
+  use "tbastos/vim-lua"
+  use "plasticboy/vim-markdown"
+  use "PProvost/vim-ps1"
+  use "numirias/semshi"
 
   -- Git
   use "lewis6991/gitsigns.nvim"
 
   -- Discord Rich Presence
-  use {'neoclide/coc.nvim', branch = 'release'}
+  use {"neoclide/coc.nvim", branch = 'release'}
+
+  -- Minimap coding window like Sublime Text
+  use {
+    "gorbit99/codewindow.nvim",
+    config = function()
+      local codewindow = require('codewindow')
+      codewindow.setup()
+      codewindow.apply_default_keybinds()
+    end,
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

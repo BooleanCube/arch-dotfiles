@@ -1,0 +1,73 @@
+{
+    "currentIndex": 1,
+    "tabs": [
+        {
+            "checkerIndex": 0,
+            "customCheckers": [
+            ],
+            "customCompileCommand": "",
+            "customTimeLimit": -1,
+            "editorAnchor": 585,
+            "editorCursor": 585,
+            "editorText": "import math\n\nt = int(input())\nfor z in range(t):\n    n = int(input())\n    l = list(map(int, input().split()))\n    last = 0\n    cost = 0\n    while True:\n        common = math.gcd(*l)\n        if common == 1: break\n        if common == last:\n            cost += 1\n            l[-1] = math.gcd(l[-1], n)\n            common = math.gcd(*l)\n        last = common\n        for i in range(n - 1, -1, -1):\n            g = math.gcd(l[i], i + 1)\n            if g % common == 0: continue\n            else:\n                cost += n - i\n                l[i] = g\n                break\n    print(cost)\n",
+            "expected": [
+                "0\n1\n2\n2\n1\n3\n3\n0\n1\n"
+            ],
+            "filePath": "/home/boole/Documents/cp/codeforces/bestie.py",
+            "horizontalScrollBarValue": 0,
+            "input": [
+                "9\n1\n1\n1\n2\n2\n2 4\n3\n3 6 9\n4\n5 10 15 20\n6\n60 60 60 60 60 60\n6\n150 90 180 120 60 30\n6\n2 4 6 9 12 18\n6\n30 60 90 120 125 125\n"
+            ],
+            "isLanguageSet": true,
+            "language": "Python",
+            "problemURL": "",
+            "savedText": "",
+            "testCaseSplitterStates": [
+                [
+                    31,
+                    31,
+                    30
+                ]
+            ],
+            "testcasesIsShow": [
+                true
+            ],
+            "untitledIndex": 1,
+            "verticalScrollbarValue": 0
+        },
+        {
+            "checkerIndex": 0,
+            "customCheckers": [
+            ],
+            "customCompileCommand": "",
+            "customTimeLimit": -1,
+            "editorAnchor": 386,
+            "editorCursor": 386,
+            "editorText": "#include <bits/stdc++.h>\nusing namespace std;\n\nusing ll = long long;\n\nll kmex(set<ll>& s, ll k) {\n\tfor(int i=1; i<s.size()+2; i++) {\n\t\tif(s.count(k*i) == 0) return k*i;\n\t}\n\treturn 0;\n}\n\nint main() {\n\tint q; cin >> q;\n\tset<ll> *s = new set<ll>;\n\twhile(q--) {\n\t\tstring t; cin >> t;\n\t\tll x; cin >> x;\n\t\tif(t == \"+\") s->insert(x);\n\t\tif(t == \"?\") cout << kmex(*s, x) << endl;\n\t}\n\treturn 0;\n}",
+            "expected": [
+                "3\n6\n3\n3\n10\n3\n2000000000000000000\n"
+            ],
+            "filePath": "/home/boole/Documents/cp/codeforces/balance.cpp",
+            "horizontalScrollBarValue": 0,
+            "input": [
+                "15\n+ 1\n+ 2\n? 1\n+ 4\n? 2\n+ 6\n? 3\n+ 7\n+ 8\n? 1\n? 2\n+ 5\n? 1\n+ 1000000000000000000\n? 1000000000000000000\n"
+            ],
+            "isLanguageSet": true,
+            "language": "C++",
+            "problemURL": "",
+            "savedText": "",
+            "testCaseSplitterStates": [
+                [
+                    157,
+                    158,
+                    157
+                ]
+            ],
+            "testcasesIsShow": [
+                true
+            ],
+            "untitledIndex": 1,
+            "verticalScrollbarValue": 0
+        }
+    ]
+}
