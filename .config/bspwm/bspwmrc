@@ -144,7 +144,7 @@ bspc rule -a stalonetray state=floating manage=off
 ## Autostart -------------------------------------------------#
 
 # Kill if already running
-killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager
+killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager bspc
 
 # Lauch xsettingsd daemon
 xsettingsd --config="$BSPDIR"/xsettingsd &
@@ -180,6 +180,3 @@ bspcomp
 bspdunst
 bspfloat &
 
-## Help-App-Run-Once
-help-and-tips &
-sed -i -e '/## Help-App-Run-Once/Q' "$HOME"/.config/bspwm/bspwmrc
