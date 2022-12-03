@@ -14,7 +14,6 @@ These are my dotfiles on Arch Linux. I am currently using Archcraft OS with Open
 
 ### Polybar - Top and bottom status bar
 ![image](https://user-images.githubusercontent.com/47650058/201471079-e3dc6783-129a-4e9b-adc1-5ebbb5a21794.png)
-![image](https://user-images.githubusercontent.com/47650058/201471086-a3ccb524-f4ec-481c-bcc6-0c25900b1194.png)
 
 ### Alacritty - Lightweight Terminal Emulator
 ![image](https://user-images.githubusercontent.com/47650058/201471101-1eec0e63-eaf8-4728-8078-ef57824b6792.png)
