@@ -24,7 +24,7 @@ These are my dotfiles on Arch Linux. I am currently using Archcraft OS with Open
 ![image](https://user-images.githubusercontent.com/47650058/232280514-659b157f-a7a9-453d-b7c0-71c51b9df4a4.png)
 
 ### Ranger File Manager - Terminal Emulated File Manager
-(transparent background)
+(transparent background)<br>
 ![image](https://user-images.githubusercontent.com/47650058/232280551-53368e11-60c4-4294-b302-77fb4b7d5999.png)
 
 ### Geany - Lightweight Text Editor
