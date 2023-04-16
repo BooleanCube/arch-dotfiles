@@ -6,7 +6,7 @@
 # -----------------------------------------------------------------------------
 
 # Wallpaper
-wallpaper='/usr/share/backgrounds/gruvbox.jpg'
+wallpaper='/home/boole/Pictures/wallpapers/leon-tukker-discoverydone.jpg'
 
 # Special
 background='#282828'
