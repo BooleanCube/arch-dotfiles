@@ -2,7 +2,7 @@
 > my epico dotfiles
 
 These are my dotfiles on Arch Linux. I am currently using Archcraft OS with Openbox/BSPWM.
-![image](https://user-images.githubusercontent.com/47650058/232280414-3226aa8d-4f29-40fe-91f6-7a9f356942a1.png)
+![image](https://user-images.githubusercontent.com/47650058/232327915-5aba0cae-5256-4652-8d83-87301f8f2ea8.png)
 
 
 ## Archcraft OS
