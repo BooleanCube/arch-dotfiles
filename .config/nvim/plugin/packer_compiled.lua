@@ -160,6 +160,11 @@ _G.packer_plugins = {
     path = "/home/boole/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["gruvbox-material"] = {
+    loaded = true,
+    path = "/home/boole/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
+  },
   ["html5.vim"] = {
     loaded = true,
     path = "/home/boole/.local/share/nvim/site/pack/packer/start/html5.vim",
@@ -264,11 +269,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/boole/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
-  },
-  semshi = {
-    loaded = true,
-    path = "/home/boole/.local/share/nvim/site/pack/packer/start/semshi",
-    url = "https://github.com/numirias/semshi"
   },
   ["telescope.nvim"] = {
     loaded = true,

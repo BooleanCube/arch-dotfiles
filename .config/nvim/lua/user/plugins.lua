@@ -48,7 +48,7 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
-  use "akinsho/bufferline.nvim"
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "ahmedkhalf/project.nvim"
@@ -70,6 +70,7 @@ return packer.startup(function(use)
   use "ChristianChiarulli/nvcode-color-schemes.vim"
   use "folke/tokyonight.nvim"
   use { "catppuccin/nvim", as = "catppuccin" }
+  use "sainnhe/gruvbox-material"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -108,7 +109,6 @@ return packer.startup(function(use)
   use "tbastos/vim-lua"
   use "plasticboy/vim-markdown"
   use "PProvost/vim-ps1"
-  use "numirias/semshi"
 
   -- Git
   use "lewis6991/gitsigns.nvim"

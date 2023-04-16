@@ -10,7 +10,7 @@ vim.g.catpuccin_flavour = "mocha" -- latter, frappe, macchiato, mocha
 
 vim.cmd [[
 try
-  colorscheme tokyonight
+  colorscheme gruvbox
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark

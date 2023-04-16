@@ -44,7 +44,7 @@ local config = {
     --   normal = { c = { fg = colors.fg, bg = colors.bg } },
     --   inactive = { c = { fg = colors.fg, bg = colors.bg } },
     -- },
-    theme = 'tokyonight',
+    theme = 'gruvbox-material',
   },
 }
 
