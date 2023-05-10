@@ -8,6 +8,8 @@ vim.g.tokyonight_colors = { hint = "orange", error = "#ff0000" }
 
 vim.g.catpuccin_flavour = "mocha" -- latter, frappe, macchiato, mocha
 
+vim.g.gruvbox_contrast_dark = "medium" -- soft, medium, hard
+
 vim.cmd [[
 try
   colorscheme gruvbox

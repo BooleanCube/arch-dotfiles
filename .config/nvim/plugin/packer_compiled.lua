@@ -160,10 +160,10 @@ _G.packer_plugins = {
     path = "/home/boole/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["gruvbox-material"] = {
+  gruvbox = {
     loaded = true,
-    path = "/home/boole/.local/share/nvim/site/pack/packer/start/gruvbox-material",
-    url = "https://github.com/sainnhe/gruvbox-material"
+    path = "/home/boole/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
   },
   ["html5.vim"] = {
     loaded = true,
@@ -184,6 +184,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/boole/.local/share/nvim/site/pack/packer/start/java-syntax.vim",
     url = "https://github.com/uiiaoo/java-syntax.vim"
+  },
+  ["keylab.nvim"] = {
+    config = { "\27LJ\2\nw\0\0\a\0\t\0\f6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0006\4\5\0'\6\6\0B\4\2\0029\4\a\0045\5\b\0B\0\5\1K\0\1\0\1\0\1\tdesc\vKeylab\nstart\vkeylab\frequire\15<leader>kl\6n\bset\vkeymap\bvim\0" },
+    loaded = true,
+    path = "/home/boole/.local/share/nvim/site/pack/packer/start/keylab.nvim",
+    url = "/home/boole/Documents/projects/keylab.nvim"
   },
   ["lsp_lines.nvim"] = {
     loaded = true,
@@ -349,6 +355,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: keylab.nvim
+time([[Config for keylab.nvim]], true)
+try_loadstring("\27LJ\2\nw\0\0\a\0\t\0\f6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0006\4\5\0'\6\6\0B\4\2\0029\4\a\0045\5\b\0B\0\5\1K\0\1\0\1\0\1\tdesc\vKeylab\nstart\vkeylab\frequire\15<leader>kl\6n\bset\vkeymap\bvim\0", "config", "keylab.nvim")
+time([[Config for keylab.nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")

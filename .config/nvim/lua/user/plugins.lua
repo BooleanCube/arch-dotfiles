@@ -70,7 +70,7 @@ return packer.startup(function(use)
   use "ChristianChiarulli/nvcode-color-schemes.vim"
   use "folke/tokyonight.nvim"
   use { "catppuccin/nvim", as = "catppuccin" }
-  use "sainnhe/gruvbox-material"
+  use "morhetz/gruvbox"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -124,6 +124,14 @@ return packer.startup(function(use)
       codewindow.setup()
       codewindow.apply_default_keybinds()
     end,
+  }
+
+  -- Development plugins
+  use { '/home/boole/Documents/projects/keylab.nvim',
+    requires = 'nvim-lua/plenary.nvim',
+    config = function()
+        vim.keymap.set('n', '<leader>kl', require('keylab').start, { desc = "Keylab" })
+    end
   }
 
   -- Automatically set up your configuration after cloning packer.nvim

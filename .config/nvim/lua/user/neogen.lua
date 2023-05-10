@@ -4,6 +4,6 @@ if not status_ok then
 end
 
 neogen.setup {
-	enabled = true,
-	input_after_comment = true,
+    enabled = true,
+    input_after_comment = true,
 }
