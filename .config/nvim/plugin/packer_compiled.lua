@@ -186,7 +186,7 @@ _G.packer_plugins = {
     url = "https://github.com/uiiaoo/java-syntax.vim"
   },
   ["keylab.nvim"] = {
-    config = { "\27LJ\2\nw\0\0\a\0\t\0\f6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0006\4\5\0'\6\6\0B\4\2\0029\4\a\0045\5\b\0B\0\5\1K\0\1\0\1\0\1\tdesc\vKeylab\nstart\vkeylab\frequire\15<leader>kl\6n\bset\vkeymap\bvim\0" },
+    config = { "\27LJ\2\n”\1\0\0\a\0\f\0\0236\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0006\4\5\0'\6\6\0B\4\2\0029\4\a\0045\5\b\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\t\0006\4\5\0'\6\6\0B\4\2\0029\4\n\0045\5\v\0B\0\5\1K\0\1\0\1\0\1\tdesc\16Stop Keylab\15close_game\15<leader>ks\1\0\1\tdesc\17Start Keylab\nstart\vkeylab\frequire\15<leader>kl\6n\bset\vkeymap\bvim\0" },
     loaded = true,
     path = "/home/boole/.local/share/nvim/site/pack/packer/start/keylab.nvim",
     url = "/home/boole/Documents/projects/keylab.nvim"
@@ -357,7 +357,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: keylab.nvim
 time([[Config for keylab.nvim]], true)
-try_loadstring("\27LJ\2\nw\0\0\a\0\t\0\f6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0006\4\5\0'\6\6\0B\4\2\0029\4\a\0045\5\b\0B\0\5\1K\0\1\0\1\0\1\tdesc\vKeylab\nstart\vkeylab\frequire\15<leader>kl\6n\bset\vkeymap\bvim\0", "config", "keylab.nvim")
+try_loadstring("\27LJ\2\n”\1\0\0\a\0\f\0\0236\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0006\4\5\0'\6\6\0B\4\2\0029\4\a\0045\5\b\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\t\0006\4\5\0'\6\6\0B\4\2\0029\4\n\0045\5\v\0B\0\5\1K\0\1\0\1\0\1\tdesc\16Stop Keylab\15close_game\15<leader>ks\1\0\1\tdesc\17Start Keylab\nstart\vkeylab\frequire\15<leader>kl\6n\bset\vkeymap\bvim\0", "config", "keylab.nvim")
 time([[Config for keylab.nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)

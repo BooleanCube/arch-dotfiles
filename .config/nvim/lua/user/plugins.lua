@@ -130,7 +130,8 @@ return packer.startup(function(use)
   use { '/home/boole/Documents/projects/keylab.nvim',
     requires = 'nvim-lua/plenary.nvim',
     config = function()
-        vim.keymap.set('n', '<leader>kl', require('keylab').start, { desc = "Keylab" })
+        vim.keymap.set('n', '<leader>kl', require('keylab').start, { desc = "Start Keylab" })
+        vim.keymap.set('n', '<leader>ks', require('keylab').close_game, { desc = "Stop Keylab" })
     end
   }
 
