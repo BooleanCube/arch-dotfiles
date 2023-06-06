@@ -5,6 +5,13 @@ These are my dotfiles on Arch Linux. I am currently using Archcraft OS with Open
 ![image](https://user-images.githubusercontent.com/47650058/232328750-00e2f46f-c60f-483b-bb7d-b0872a2605bb.png)
 
 
+### Fonts Directory:
+/home/user/.local/share/fonts/
+
+### Wallpapers Directory:
+/home/user/Pictures/wallpapers/
+
+
 ## Archcraft OS
 ![image](https://user-images.githubusercontent.com/47650058/189801200-74192928-4c72-417e-8b26-1fadb8b53afb.png)
 
