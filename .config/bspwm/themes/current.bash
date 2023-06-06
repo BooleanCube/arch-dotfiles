@@ -6,10 +6,10 @@
 # -----------------------------------------------------------------------------
 
 # Wallpaper
-wallpaper='/home/boole/Pictures/wallpapers/leon-tukker-discoverydone.jpg'
+wallpaper='/home/boole/Pictures/wallpapers/dustyroad.png'
 
 # Special
-background='#282828'
+background='#262626'
 foreground='#ebdbb2'
 cursor='#ebdbb2'
 

@@ -1,0 +1,8 @@
+[[language]]
+name = "gdscript"
+roots = ["project.godot"]
+language-server = { command = "nc", args = ["localhost", "6005"], language-id = "gdscript" }
+
+[[language]]
+name = "markdown"
+language-server = { command = "ltex-ls" }
