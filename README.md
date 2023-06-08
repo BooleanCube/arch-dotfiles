@@ -21,7 +21,7 @@ These are my dotfiles on Arch Linux. I am currently using Archcraft OS with Open
 ### BSPWM - Tiled, lightweight, minimal WM
 ![image](https://user-images.githubusercontent.com/47650058/189801373-a7fe5f8a-8e85-4542-8421-dbb45b26b314.png)
 
-### Polybar - Top and bottom status bar
+### Polybar - Status bar
 ![image](https://user-images.githubusercontent.com/47650058/232280472-ffa93f48-30e3-4c23-a6a6-25dfb5a40de9.png)
 
 ### Alacritty - Lightweight Terminal Emulator
