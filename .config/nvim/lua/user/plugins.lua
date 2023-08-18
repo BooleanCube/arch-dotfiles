@@ -90,7 +90,7 @@ return packer.startup(function(use)
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "https://git.sr.ht/~whynothugo/lsp_lines.nvim" -- for LSP Virtual Text lines
-  use "danymat/neogen" -- for comment intellisense    
+  use "danymat/neogen" -- for comment intellisense
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -124,6 +124,13 @@ return packer.startup(function(use)
       codewindow.setup()
       codewindow.apply_default_keybinds()
     end,
+  }
+
+  -- for competitive programming
+  use {
+    'xeluxee/competitest.nvim',
+    requires = 'MunifTanjim/nui.nvim',
+    config = function() require('competitest').setup() end
   }
 
   -- Development plugins

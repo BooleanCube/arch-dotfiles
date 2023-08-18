@@ -140,6 +140,12 @@ _G.packer_plugins = {
     path = "/home/boole/.local/share/nvim/site/pack/packer/start/codewindow.nvim",
     url = "https://github.com/gorbit99/codewindow.nvim"
   },
+  ["competitest.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\16competitest\frequire\0" },
+    loaded = true,
+    path = "/home/boole/.local/share/nvim/site/pack/packer/start/competitest.nvim",
+    url = "https://github.com/xeluxee/competitest.nvim"
+  },
   ["darkplus.nvim"] = {
     loaded = true,
     path = "/home/boole/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
@@ -210,6 +216,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/boole/.local/share/nvim/site/pack/packer/start/nlsp-settings.nvim",
     url = "https://github.com/tamago324/nlsp-settings.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/boole/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -355,6 +366,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: competitest.nvim
+time([[Config for competitest.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\16competitest\frequire\0", "config", "competitest.nvim")
+time([[Config for competitest.nvim]], false)
 -- Config for: keylab.nvim
 time([[Config for keylab.nvim]], true)
 try_loadstring("\27LJ\2\n”\1\0\0\a\0\f\0\0236\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0006\4\5\0'\6\6\0B\4\2\0029\4\a\0045\5\b\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\t\0006\4\5\0'\6\6\0B\4\2\0029\4\n\0045\5\v\0B\0\5\1K\0\1\0\1\0\1\tdesc\16Stop Keylab\15close_game\15<leader>ks\1\0\1\tdesc\17Start Keylab\nstart\vkeylab\frequire\15<leader>kl\6n\bset\vkeymap\bvim\0", "config", "keylab.nvim")
