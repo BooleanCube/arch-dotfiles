@@ -12,7 +12,7 @@ vim.g.gruvbox_contrast_dark = "medium" -- soft, medium, hard
 
 vim.cmd [[
 try
-  colorscheme gruvbox
+  colorscheme catppuccin-mocha
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark
