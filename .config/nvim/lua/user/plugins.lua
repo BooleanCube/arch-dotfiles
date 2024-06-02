@@ -11,8 +11,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "https://github.com/wbthomason/packer.nvim",
     install_path,
   }
-  print "Installing packer close and reopen Neovim..."
-  vim.cmd [[packadd packer.nvim]]
+  print "Installing packer close and reopen Neovim..." vim.cmd [[packadd packer.nvim]]
 end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
@@ -46,9 +45,17 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
-  use "kyazdani42/nvim-web-devicons"
-  use "kyazdani42/nvim-tree.lua"
-  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  }
+  use {
+    'akinsho/bufferline.nvim',
+    -- tag = '*',
+    requires = 'nvim-tree/nvim-web-devicons'
+  }
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
   use "ahmedkhalf/project.nvim"
@@ -96,19 +103,7 @@ return packer.startup(function(use)
   use "nvim-telescope/telescope.nvim"
 
   -- Syntax Highlighting
-  use "nvim-treesitter/nvim-treesitter"
-  use "lervag/vimtex"
-  use "uiiaoo/java-syntax.vim"
-  use "bfrg/vim-cpp-modern"
-  use "tpope/vim-git"
-  use "SirJson/fzf-gitignore"
-  use "othree/html5.vim"
-  use "pangloss/vim-javascript"
-  use "statico/vim-javascript-sql"
-  use "elzr/vim-json"
-  use "tbastos/vim-lua"
-  use "plasticboy/vim-markdown"
-  use "PProvost/vim-ps1"
+  use { "nvim-treesitter/nvim-treesitter", lazy=false }
 
   -- Git
   use "lewis6991/gitsigns.nvim"

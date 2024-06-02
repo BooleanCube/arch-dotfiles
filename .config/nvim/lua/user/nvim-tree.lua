@@ -3,10 +3,10 @@ if not status_ok then
   return
 end
 
-local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
-if not config_status_ok then
-  return
-end
+-- local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
+-- if not config_status_ok then
+--   return
+-- end
 
 local function on_attach(bufnr)
     local api = require('nvim-tree.api')
@@ -88,7 +88,7 @@ local function on_attach(bufnr)
 
 end
 
-local tree_cb = nvim_tree_config.nvim_tree_callback
+-- local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
     update_focused_file = {
@@ -140,4 +140,3 @@ nvim_tree.setup {
     },
     on_attach = on_attach,
 }
-
